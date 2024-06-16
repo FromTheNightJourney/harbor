@@ -2,7 +2,7 @@ body {
     background-color: var(--glow);
   }
 
-.mainBackgroundRect {
+.admin_mainBackgroundRect {
     width: 100%;
     height: 78px;
     position: absolute;
@@ -13,14 +13,14 @@ body {
     background-color: var(--ash);
     z-index: 1;
   }
-  .subBackgroundRect {
+  .admin_subBackgroundRect {
     align-self: stretch;
     height: 132px;
     position: relative;
     border-radius: var(--br-11xl);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #848d4c;
+    background: linear-gradient(rgba(0, 0, 0, 0.admin_2), rgba(0, 0, 0, 0.admin_2)), #848d4c;
   }
-  .mainOngoingShipment {
+  .admin_mainOngoingShipment {
     width: 100%;
     position: relative;
     background-color: var(--glow);
@@ -39,22 +39,23 @@ body {
 
 /*ongoing header */
 
-  .osh_h2,
-.osh_ongoingShipment {
+  .admin_osh_h2,
+.admin_osh_ongoingShipment {
   margin: 0;
   position: relative;
   font-size: inherit;
   font-family: inherit;
 }
-.osh_h2 {
+.admin_osh_h2 {
   font-weight: 400;
   display: inline-block;
   min-width: 23px;
 }
-.osh_ongoingShipment {
+.admin_osh_ongoingShipment {
   font-weight: 600;
+  
 }
-.osh_ongoingShipmentWrapper {
+.admin_osh_ongoingShipmentWrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -62,24 +63,24 @@ body {
   padding: var(--padding-9xs) 0 0;
   font-size: var(--font-size-xl);
 }
-.osh_frameChild,
-.osh_frameParent,
-.osh_parent {
+.admin_osh_frameChild,
+.admin_osh_frameParent,
+.admin_osh_parent {
   align-self: stretch;
   display: flex;
   align-items: flex-start;
 }
-.osh_parent {
+.admin_osh_parent {
   flex-direction: row;
   justify-content: space-between;
   gap: var(--gap-xl);
 }
-.osh_frameChild,
-.osh_frameParent {
+.admin_osh_frameChild,
+.admin_osh_frameParent {
   justify-content: flex-start;
   font-family: var(--font-inter);
 }
-.osh_frameChild {
+.admin_osh_frameChild {
   width: 100%;
   border: 0;
   outline: 0;
@@ -94,7 +95,7 @@ body {
   color: var(--ash);
   min-width: 192px;
 }
-.osh_frameParent {
+.admin_osh_frameParent {
   flex-direction: column;
   padding: 0 0 var(--padding-8xs);
   gap: var(--gap-3xl);
@@ -102,13 +103,13 @@ body {
   font-size: var(--font-size-5xl);
   color: var(--color-black);
 }
-.osh_backButton {
+.admin_osh_backButton {
   text-decoration: none;
 }
 
 /* container */
 
-.osd_frameChild {
+.admin_osd_frameChild {
     width: 320px;
     height: 132px;
     position: relative;
@@ -117,12 +118,12 @@ body {
     display: none;
     z-index: 0;
   }
-  .osd_shippingIdexample {
+  .admin_osd_shippingIdexample {
     position: relative;
     font-weight: 600;
     z-index: 1;
   }
-  .osd_shippingIDLabel {
+  .admin_osd_shippingIDLabel {
     height: 22px;
     width: 22px;
     position: relative;
@@ -130,7 +131,7 @@ body {
     background-color: var(--earth);
     z-index: 1;
   }
-  .osd_sentOnDateLabelChild {
+  .admin_osd_sentOnDateLabelChild {
     align-self: stretch;
     height: 1px;
     position: relative;
@@ -139,7 +140,7 @@ body {
     box-sizing: border-box;
     z-index: 2;
   }
-  .osd_sentOnDateLabel {
+  .admin_osd_sentOnDateLabel {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -147,7 +148,7 @@ body {
     justify-content: flex-end;
     padding: 0 0 var(--padding-3xs);
   }
-  .osd_frameItem {
+  .admin_osd_frameItem {
     height: 22px;
     width: 22px;
     position: relative;
@@ -155,14 +156,14 @@ body {
     background-color: var(--sand);
     z-index: 1;
   }
-  .osd_sentOnDateLabelParent {
+  .admin_osd_sentOnDateLabelParent {
     flex: 1;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
   }
-  .osd_ongoingShipmentLabel {
+  .admin_osd_ongoingShipmentLabel {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -170,14 +171,14 @@ body {
     justify-content: flex-end;
     padding: 0 var(--padding-mid) 0 0;
   }
-  .osd_sentOnDate {
+  .admin_osd_sentOnDate {
     width: 122px;
     position: relative;
     display: inline-block;
     font-weight: 300;
     z-index: 1;
   }
-  .osd_ongoingShipmentLabelParent {
+  .admin_osd_ongoingShipmentLabelParent {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -186,24 +187,24 @@ body {
     gap: var(--gap-mini);
     min-width: 147px;
   }
-  .osd_fRAME,
-  .osd_shippingIDLabelParent {
+  .admin_osd_fRAME,
+  .admin_osd_shippingIDLabelParent {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .osd_shippingIDLabelParent {
+  .admin_osd_shippingIDLabelParent {
     flex: 1;
     flex-wrap: wrap;
     row-gap: 20px;
   }
-  .osd_fRAME {
+  .admin_osd_fRAME {
     align-self: stretch;
     padding: 0 0 0 var(--padding-lg);
     text-align: right;
   }
-  .osd_frameInner {
+  .admin_osd_frameInner {
     width: 22px;
     height: 22px;
     position: absolute;
@@ -214,7 +215,7 @@ body {
     background-color: var(--sand);
     z-index: 3;
   }
-  .osd_rectangleParent {
+  .admin_osd_rectangleParent {
     align-self: stretch;
     border-radius: var(--br-11xl);
     background-color: var(--matcha);

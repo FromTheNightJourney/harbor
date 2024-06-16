@@ -2,32 +2,32 @@ import "../styles/harborhomeComp.css";
 
 const SearchShipment = () => {
   return (
-    <section className="Inner">
+    <section className="admin_Inner">
         {/* top part frame */}
-      <div className="parentFrame">
+      <div className="admin_parentFrame">
          {/* profile pic, name, shipment track */}
-        <div className="frameGroup"> 
+        <div className="admin_frameGroup"> 
            {/* name and profile picture */}
-          <div className="profilepicParent">
+          <div className="admin_profilepicParent">
              {/* profile picture */}
-            <div className="frameChild" />
+            <div className="admin_frameChild" />
              {/* name and location wrapper */}
-            <div className="frameWrapper">
+            <div className="admin_frameWrapper">
                  {/* name and location */}
-              <div className="fullnameParent">
-                <h3 className="fullName">Full Name</h3>
-                <div className="location">Location</div>
+              <div className="admin_fullnameParent">
+                <h3 className="admin_fullName">Full Name</h3>
+                <div className="admin_location">Location</div>
               </div>
             </div>
           </div>
            {/* shipment tracking search */}
-          <div className="frameContainer">
-            <div className="trackingShipmentParent">
-              <div className="trackingShipment">
+          <div className="admin_frameContainer">
+            <div className="admin_trackingShipmentParent">
+              <div className="admin_trackingShipment">
                 Track your shipment
               </div>
               <input
-                className="frameItem"
+                className="admin_frameItem"
                 placeholder="Resi number"
                 type="text"
               />
@@ -35,9 +35,9 @@ const SearchShipment = () => {
           </div>
         </div>
          {/* stuff to the side */}
-          <div className="rectangleParent">
-            <div className="frameInner" />
-            <div className="rectangleDiv" />
+          <div className="admin_rectangleParent">
+            <div className="admin_frameInner" />
+            <div className="admin_rectangleDiv" />
         </div>
       </div>
     </section>

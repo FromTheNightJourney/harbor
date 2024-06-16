@@ -11,13 +11,13 @@ const ShippingHistory = () => {
     const handlepageclick = (newpage) => {setshiphistpageinfo(newpage)};
     const currentshiphistinfo = batch.slice(shiphistpageinfo);
   return (
-    <div className="shiphist_mharborShippingHistory">
-      <section className="shiphist_frameParent">
-        <div className="shiphist_parent">
-          <Link to="/" className="shiphist_backButton">{`<-`}</Link>
-          <h3 className="shiphist_shippingHistory">Shipping history</h3>
+    <div className="admin_shiphist_mharborShippingHistory">
+      <section className="admin_shiphist_frameParent">
+        <div className="admin_shiphist_parent">
+          <Link to="/" className="admin_shiphist_backButton">{`<-`}</Link>
+          <div className="admin_shiphist_shippingHistory">Shipping History</div>
         </div>
-        <input className="shiphist_frameChild" placeholder="Search" type="text" />
+        <input className="admin_shiphist_frameChild" placeholder="Search" type="text" />
         Filter By
         {currentshiphistinfo.map((item,index) => (<Shiphistorycontainer key={item.batch_id} Batch_ID={item.batch_id}/>))}
       </section>
